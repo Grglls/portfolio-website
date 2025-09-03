@@ -129,3 +129,36 @@ section {
   background-color: var(--primary-color);
   transform: scale(1.2)translateY(-10%);
 }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--bg-color-2);
+}
+
+#about h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
