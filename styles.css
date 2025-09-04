@@ -95,14 +95,15 @@ nav > a:hover {
 section {
   min-height: 100vh;
   padding: 10rem 15rem;
-}
-
-#home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+section:nth-of-type(2n) {
+  background-color: var(--bg-color-2);
 }
 
 #home h1 {
@@ -140,15 +141,6 @@ section {
   color: var(--text-color);
   background-color: var(--primary-color);
   transform: scale(1.2)translateY(-10%);
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--bg-color-2);
 }
 
 #about h2 {
@@ -230,15 +222,6 @@ section {
   transform: scale(1.05);
   box-shadow: 0 0 10px var(--primary-color),
               0 0 20px var(--primary-color);
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--bg-color-2);
 }
 
 #contact h2 {
