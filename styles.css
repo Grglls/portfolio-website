@@ -288,3 +288,30 @@ footer p {
   margin-top: 40px;
   font-size: 1.5rem;
 }
+
+@media (max-width: 1200px) {
+  #menu-icon {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 0 3rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    display: none;
+  }
+  nav > a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: right;
+  }
+  nav.active {
+    display: block;
+  }
+}
