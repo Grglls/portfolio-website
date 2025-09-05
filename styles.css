@@ -106,13 +106,19 @@ section:nth-of-type(2n) {
   background-color: var(--bg-color-2);
 }
 
-#home h1 {
+h1 {
   font-size: 6rem;
   font-weight: 700;
   margin-top: 2rem;
 }
 
-#home h3 {
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h3 {
   font-size: 4rem;
   margin: 1rem 0;
 }
@@ -143,23 +149,10 @@ section:nth-of-type(2n) {
   transform: scale(1.2)translateY(-10%);
 }
 
-#about h2 {
-  font-size: 4rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
 #about p {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
-}
-
-#projects h2 {
-  font-size: 4rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  text-align: center;
 }
 
 .projects-box {
@@ -222,12 +215,6 @@ section:nth-of-type(2n) {
   transform: scale(1.05);
   box-shadow: 0 0 10px var(--primary-color),
               0 0 20px var(--primary-color);
-}
-
-#contact h2 {
-  font-size: 4rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
 }
 
 #contact p {
