@@ -273,4 +273,7 @@ footer p {
   nav.active {
     display: block;
   }
+  section {
+    padding: 10rem 2rem;
+  }
 }
