@@ -248,7 +248,7 @@ footer p {
   font-size: 1.5rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   #menu-icon {
     display: block;
   }
