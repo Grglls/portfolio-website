@@ -84,12 +84,13 @@ nav > a {
   font-weight: 600;
   margin-left: 4rem;
   transition: 0.1s ease-in-out;
-  border-bottom: 3px solid transparent;
 }
 
 nav > a:hover {
   color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
 }
 
 section {
