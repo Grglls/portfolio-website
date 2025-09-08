@@ -43,13 +43,14 @@ function currentSlide(p, n) {
 
 function showSlides() {
   for (const project in carouselState) {
-    if (carouselState[project].slideIndex > carouselState[project].slides.length) {carouselState[project].slideIndex = 1}
-    if (carouselState[project].slideIndex < 1) {carouselState[project].slideIndex = carouselState[project].slides.length}
-    for (let i = 0; i < carouselState[project].slides.length; i++) {
-      carouselState[project].slides[i].style.display = "none";
+    const { slideIndex, slides, dots } = carouselState[project];
+    if (slideIndex > slides.length) {carouselState[project].slideIndex = 1}
+    if (slideIndex < 1) {carouselState[project].slideIndex = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
-    for (let i = 0; i < carouselState[project].dots.length; i++) {
-      carouselState[project].dots[i].className = carouselState[project].dots[i].className.replace(" active", "");
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
     }
     carouselState[project].slides[carouselState[project].slideIndex-1].style.display = "block";
     carouselState[project].dots[carouselState[project].slideIndex-1].className += " active";
