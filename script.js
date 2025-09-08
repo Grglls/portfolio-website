@@ -15,31 +15,43 @@ navLogo.addEventListener('click', () => {
   menuIcon.click();
 });
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const carouselState = {
+  "project-1": {
+    "slideIndex": 1,
+    "slides": document.querySelectorAll("#project-1 .mySlides"),
+    "dots": document.querySelectorAll("#project-1 .dot")
+  },
+  "project-2": {
+    "slideIndex": 1,
+    "slides": document.querySelectorAll("#project-2 .mySlides"),
+    "dots": document.querySelectorAll("#project-2 .dot")
+  }
+};
+showSlides();
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(p, n) {
+  carouselState[p].slideIndex += n;
+  showSlides();
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(p, n) {
+  carouselState[p].slideIndex = n;
+  showSlides();
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function showSlides() {
+  for (const project in carouselState) {
+    if (carouselState[project].slideIndex > carouselState[project].slides.length) {carouselState[project].slideIndex = 1}
+    if (carouselState[project].slideIndex < 1) {carouselState[project].slideIndex = carouselState[project].slides.length}
+    for (let i = 0; i < carouselState[project].slides.length; i++) {
+      carouselState[project].slides[i].style.display = "none";
+    }
+    for (let i = 0; i < carouselState[project].dots.length; i++) {
+      carouselState[project].dots[i].className = carouselState[project].dots[i].className.replace(" active", "");
+    }
+    carouselState[project].slides[carouselState[project].slideIndex-1].style.display = "block";
+    carouselState[project].dots[carouselState[project].slideIndex-1].className += " active";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }

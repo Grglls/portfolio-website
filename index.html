@@ -42,7 +42,7 @@
     <h2>My <span>Projects</span></h2>
     <div class="projects-box">
       <!-- Project 1 - Hangman -->
-      <div class="project-card">
+      <div class="project-card" id="project-1">
         <!-- Slideshow container -->
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
@@ -59,15 +59,15 @@
             <img src="assets/screenshots/project-1-hangman/4_win.png">
           </div>
           <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides('project-1', -1)">&#10094;</a>
+          <a class="next" onclick="plusSlides('project-1', 1)">&#10095;</a>
         </div>
         <!-- The dots/circles -->
         <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide('project-1', 1)"></span>
+          <span class="dot" onclick="currentSlide('project-1', 2)"></span>
+          <span class="dot" onclick="currentSlide('project-1', 3)"></span>
+          <span class="dot" onclick="currentSlide('project-1', 4)"></span>
         </div>
         <h3>Hangman</h3>
         <p>A web game using HTML, CSS and JavaScript.</p>
@@ -75,12 +75,36 @@
         <a href="https://grglls.github.io/hangman/" class="btn">Try it out <i class='bx bx-link-external'></i></a>
       </div>
 
-      <div class="project-card">
-        <img src="assets/screenshots/tui 1.jpeg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate nam reiciendis velit eius! Deserunt, ipsam? Aliquam quisquam vero culpa?</p>
-        <a href="#" class="btn">View On GitHub</a>
+      <!-- Project 2 - Word-Maker -->
+      <div class="project-card" id="project-2">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="assets/screenshots/project-2-word-maker/1_start.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="assets/screenshots/project-2-word-maker/2_playing.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="assets/screenshots/project-2-word-maker/3_win.png">
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides('project-2', -1)">&#10094;</a>
+          <a class="next" onclick="plusSlides('project-2', 1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide('project-2', 1)"></span>
+          <span class="dot" onclick="currentSlide('project-2', 2)"></span>
+          <span class="dot" onclick="currentSlide('project-2', 3)"></span>
+        </div>
+        <h3>Word-Maker</h3>
+        <p>A web game using HTML, CSS and JavaScript.</p>
+        <a href="https://github.com/Grglls/word-maker" class="btn">View On GitHub <i class='bx bx-link-external'></i></a>
+        <a href="https://grglls.github.io/word-maker/" class="btn">Try it out <i class='bx bx-link-external'></i></a>
       </div>
+
       <div class="project-card">
         <img src="assets/screenshots/tui 1.jpeg" alt="Project 3">
         <h3>Project 3</h3>
