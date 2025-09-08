@@ -209,9 +209,10 @@ h3 {
 
 .btn {
   display: inline-block;
+  width: 100%;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
-  border-radius: 3rem;
+  border-radius: 1rem;
   font-size: 1.8rem;
   color: black;
   border: 2px solid transparent;
