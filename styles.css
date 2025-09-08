@@ -311,6 +311,11 @@ footer p {
   display: none;
 }
 
+/* Show the images with the class "active" */
+.mySlides.active {
+  display: block;
+}
+
 /* Set the width of the images */
 .mySlides img {
   width: 100%;

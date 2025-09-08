@@ -47,12 +47,12 @@ function showSlides() {
     if (slideIndex > slides.length) {carouselState[project].slideIndex = 1}
     if (slideIndex < 1) {carouselState[project].slideIndex = slides.length}
     for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].classList.remove("active");
     }
     for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    carouselState[project].slides[carouselState[project].slideIndex-1].style.display = "block";
+    carouselState[project].slides[carouselState[project].slideIndex-1].classList.add("active");
     carouselState[project].dots[carouselState[project].slideIndex-1].className += " active";
   }
 }
