@@ -21,10 +21,10 @@ const carouselState = {
     "slides": document.querySelectorAll("#project-1 .mySlides"),
     "dots": document.querySelectorAll("#project-1 .dot")
   },
-  "project-2": {
+  "project-1b": {
     "slideIndex": 1,
-    "slides": document.querySelectorAll("#project-2 .mySlides"),
-    "dots": document.querySelectorAll("#project-2 .dot")
+    "slides": document.querySelectorAll("#project-1b .mySlides"),
+    "dots": document.querySelectorAll("#project-1b .dot")
   },
   "project-3": {
     "slideIndex": 1,
