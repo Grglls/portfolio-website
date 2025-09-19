@@ -199,6 +199,15 @@ h3 {
   font-size: 1.6rem;
 }
 
+.project-card li {
+  font-size: 1.6rem;
+}
+
+.project-card ul {
+  margin-left: 2rem;
+  text-align: left;
+}
+
 .btn {
   display: inline-block;
   width: 100%;
