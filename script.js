@@ -50,6 +50,11 @@ const carouselState = {
     "slideIndex": 1,
     "slides": document.querySelectorAll("#project-4 .mySlides"),
     "dots": document.querySelectorAll("#project-4 .dot")
+  },
+  "project-4-planning": {
+    "slideIndex": 1,
+    "slides": document.querySelectorAll("#project-4-planning .mySlides"),
+    "dots": document.querySelectorAll("#project-4-planning .dot")
   }
 };
 showSlides();
